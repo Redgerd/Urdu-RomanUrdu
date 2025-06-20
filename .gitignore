@@ -1,0 +1,44 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment and system files
+.env
+*.env
+.env.*
+
+# Jupyter & Colab
+.ipynb_checkpoints/
+*.ipynb
+
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+.code-workspace
+
+# Input/output data
+input/
+output/
+batch_files/
+*.jsonl
+*.parquet
+*.csv
+
+# Logs
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Zip archives or temp files
+*.zip
+*.tar
+*.gz
+*.tmp
+
+# Hugging Face cache (if any)
+~/.cache/huggingface/
