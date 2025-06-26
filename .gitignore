@@ -42,3 +42,8 @@ venv/
 
 # Hugging Face cache (if any)
 ~/.cache/huggingface/
+
+./outputs
+./batch_files
+./batch_prepared
+./input
