@@ -1,49 +1,37 @@
-# Python cache files
+# Bytecode and cache
 __pycache__/
 *.pyc
 
-# Environment and system files
-.env
-*.env
-.env.*
-
-# Jupyter & Colab
-.ipynb_checkpoints/
-*.ipynb
-
-# MacOS
-.DS_Store
-
-# VS Code
-.vscode/
-.code-workspace
-
-# Input/output data
-input/
-output/
-batch_files/
-*.jsonl
-*.parquet
-*.csv
-
-# Logs
-*.log
-
-# Virtual environments
+# Environments
+.env*
 .venv/
 env/
 venv/
 
-# Zip archives or temp files
+# OS and IDE
+.DS_Store
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.jsonl
+*.parquet
+*.csv
+*.log
 *.zip
 *.tar
 *.gz
 *.tmp
 
-# Hugging Face cache (if any)
-~/.cache/huggingface/
+# Project folders
+input/
+output/
+batch_files/
+batch_prepared/
+alpaca_data/
 
-./outputs
-./batch_files
-./batch_prepared
-./input
+# Hugging Face cache
+.cache/huggingface/
