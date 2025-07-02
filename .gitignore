@@ -35,3 +35,5 @@ alpaca_data/
 
 # Hugging Face cache
 .cache/huggingface/
+
+unsloth_compiled_cache/

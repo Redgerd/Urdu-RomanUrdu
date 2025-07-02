@@ -3,7 +3,16 @@ import json
 import random
 
 alpaca_parquet_path = "hf://datasets/tatsu-lab/alpaca/data/train-00000-of-00001-a09b74b3ef9c3b56.parquet"
+
 alpaca_df = pd.read_parquet(alpaca_parquet_path, engine="pyarrow")
+
+# Filter entries with empty input only
+alpaca_filtered = alpaca_df[alpaca_df["input"].str.strip() == ""]
+
+# Random sample (you can change 'n' to desired sample size if needed)
+alpaca_subset = alpaca_filtered.sample(n=511, random_state=42)[["instruction", "input", "output"]]
+
+
 alpaca_subset = alpaca_df.sample(n=511, random_state=42)[["instruction", "input", "output"]]
 
 roman_urdu_path = "alpaca_data/roman_urdu_QA_full_alpaca.jsonl"
